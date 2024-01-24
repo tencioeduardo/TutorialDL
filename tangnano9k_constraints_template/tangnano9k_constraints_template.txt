@@ -9,7 +9,7 @@ IO_LOC  "clk" 52;
 IO_PORT "clk" IO_TYPE=LVCMOS33 PULL_MODE=UP;
 
 
-//On board SW
+//Switches
 IO_LOC  "btn1" 3;
 IO_PORT "btn1" IO_TYPE=LVCMOS18;
 
@@ -17,7 +17,7 @@ IO_LOC  "btn2" 4;
 IO_PORT "btn2" IO_TYPE=LVCMOS18;
 
 
-//On board LED
+//LEDs
 IO_LOC  "led[0]" 10;
 IO_PORT "led[0]" DRIVE=8 IO_TYPE=LVCMOS18;
 
@@ -37,8 +37,8 @@ IO_LOC  "led[5]" 16;
 IO_PORT "led[5]" DRIVE=8 IO_TYPE=LVCMOS18;
 
 
-//Header physical ports
-//DRIVE: current in mA (4, 8, 16 or 24), *PULL_MODE: ensure a known state for a signal (GND or VCC), IO_TYPE: LVCMOS33/LVCMOS18 voltage (3.3 or 1.8)
+//Header_physical_ports
+//DRIVE: current in mA (4, 8, 16 or 24), //PULL_MODE: ensure a known state for a signal (GND or VCC), //IO_TYPE: LVCMOS33/LVCMOS18 voltage (3.3 or 1.8)
 //Any header on the board can be used, in this section there are only those that are not used by the boards interfaces, for example, HDMI. To use any port you just have to follow the format.
 IO_LOC "port25" 25;
 IO_LOC "port25" DRIVE=8 IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
@@ -80,7 +80,7 @@ IO_LOC "port85" 85;
 IO_LOC "port85" DRIVE=8 IO_TYPE=LVCMOS18 PULL_MODE=DOWN;
 
 
-//SD Card
+//SD_Card
 IO_LOC  "sdClk" 36;
 IO_PORT "sdClk" IO_TYPE=LVCMOS33;
 
@@ -116,7 +116,7 @@ IO_LOC  "uartRx" 18;
 IO_PORT "uartRx" IO_TYPE=LVCMOS33 PULL_MODE=UP;
 
 
-//HDMI interface
+//HDMI_interface
 IO_LOC  "hdmiTmdsData[0]" 71,70;
 IO_PORT "hdmiTmdsData[0]" DRIVE=8;
 
@@ -130,7 +130,7 @@ IO_LOC  "hdmiTmdsClk" 69,68;
 IO_PORT "hdmiTmdsClk" DRIVE=8;
 
 
-//SPI_LCD interface
+//SPI_LCD_interface
 IO_LOC "spi_lcd_data" 77;
 IO_PORT "spi_lcd_data" PULL_MODE=UP DRIVE=8;
 
@@ -147,7 +147,7 @@ IO_LOC "spi_lcd_resetn" 47;
 IO_PORT "spi_lcd_resetn" PULL_MODE=UP DRIVE=8;
 
 
-//RGB LCD interface
+//RGB_LCD_interface
 IO_LOC "LCD_B[4]" 41;
 IO_PORT "LCD_B[4]" IO_TYPE=LVCMOS33;
 
