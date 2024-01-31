@@ -98,5 +98,53 @@ Presione "Replace Driver" y espere a que se complete la acción:
   <img src="https://github.com/DJosueMM/open_source_fpga_environment/assets/81501061/6ef1fe2f-d0d9-4731-a443-82e645a95f80" alt="Reemplazar el controlador en Zadig">
 </div>
 
+## Instalación de GTK Wave
+
+Aunque se puede utilizar la extensión *WaveTrace* para visualizar los diagramas de tiempo, esta presenta limitaciones al requerir una licencia. Por esta razón, se instalará "GTKWave".
+
+- **Windows:**
+  - [Descargar GTKWave para Windows](https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win64/gtkwave-3.3.100-bin-win64.zip/download)
+  
+- **Otros sistemas operativos:**
+  - [Descargar GTKWave para otros sistemas operativos](https://gtkwave.sourceforge.net/)
+
+Después de la instalación, extraiga la aplicación en la ubicación deseada (la ruta a esta ubicación se utilizará más adelante).
+
+## Agregar GTK Wave al Path
+
+Para ejecutar la aplicación desde cualquier proyecto en la consola de VSCode, es necesario agregar la carpeta `bin` que está dentro de la carpeta `gtkwave64` a la variable de entorno PATH.
+
+1. **Copie la ruta de la carpeta `bin`:**
+   
+   <p align="center">
+     <img src="https://github.com/DJosueMM/open_source_fpga_environment/assets/81501061/482005a5-d462-4888-9a3e-5dca268a5989" alt="Copiar ruta de bin">
+   </p>
+
+2. **Edite las variables de entorno del sistema:**
+   
+   Busque en el cuadro de búsqueda de Windows *variables de entorno*:
+
+   <p align="center">
+     <img src="https://github.com/DJosueMM/open_source_fpga_environment/assets/81501061/19d09880-5d3c-455e-966a-b381a101090f" alt="Buscar variables de entorno">
+   </p>
+
+3. **Ingrese al editor de variables de entorno y presione *Variables de entorno...*:**
+   
+   <p align="center">
+     <img src="https://github.com/DJosueMM/open_source_fpga_environment/assets/81501061/d29bbac5-9c8f-4fff-9fea-af05853882aa" alt="Editor de variables de entorno">
+   </p>
+
+4. **Seleccione *Path* y presione *Editar*:**
+   
+   <p align="center">
+     <img src="https://github.com/DJosueMM/open_source_fpga_environment/assets/81501061/a885a522-3758-4e57-bd0e-a6fc692f0e8a" alt="Editar Path">
+   </p>
+
+5. **Presione *Nuevo* y pegue la ruta a la carpeta `bin` que copió anteriormente. Finalmente, presione Aceptar en cada ventana.**
+
+   <p align="center">
+     <img src="https://github.com/DJosueMM/open_source_fpga_environment/assets/81501061/810488d5-e506-4cc8-9db8-02f3e45a877e" alt="Agregar ruta a Path">
+   </p>
+
 # Referencias
 Esta guía está basada en el siguiente documento: [Getting Setup with the Tang Nano 9k](https://learn.lushaylabs.com/getting-setup-with-the-tang-nano-9k/).
