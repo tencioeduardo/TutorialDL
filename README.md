@@ -60,6 +60,8 @@ Otra forma es abrir la extensión *Lushay Code*, ir a la configuración:
   <img src="https://github.com/DJosueMM/open_source_fpga_environment/assets/81501061/4cf5da3f-2eb2-4b3a-83fe-7027d2aeec33" alt="Configuración de Lushay Code en VSCode">
 </div>
 
+
+
 <div align="center">
   <img src="https://github.com/DJosueMM/open_source_fpga_environment/assets/81501061/6507ecf2-ee39-4054-b985-2dd4da61f5b0" alt="Configuración de Lushay Code en VSCode (continuación)">
 </div>
