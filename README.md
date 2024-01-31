@@ -60,7 +60,7 @@ Y esa ruta se pega en el apartado de OSS Cad Suite en la configuración de la ex
 ![image](https://github.com/DJosueMM/open_source_fpga_environment/assets/81501061/e4f9123f-43c1-4325-b11c-97d4d493566b)
 
 
-# Configuración del Driver USB de Windows 
+## Configuración del Driver USB de Windows 
 
 Es necesario modificar el driver USB de Windows para poder programar la FPGA con `openFPGALoader`, para esto se necesita instalar el siguiente programa https://zadig.akeo.ie/
 
