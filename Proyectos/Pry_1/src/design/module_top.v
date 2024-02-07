@@ -1,4 +1,4 @@
-module gray # (
+module top # (
 
      parameter INPUT_REFRESH = 2700000,
      parameter DISPLAY_REFRESH = 27000
