@@ -19,10 +19,10 @@ IO_PORT "catodo_po[3]" IO_TYPE=LVCMOS33;
 IO_LOC  "catodo_po[2]" 55;
 IO_PORT "catodo_po[2]" IO_TYPE=LVCMOS33;
 
-IO_LOC  "anodo_po[1]" 56;
+IO_LOC  "anodo_po[1]" 57;
 IO_PORT "anodo_po[1]" IO_TYPE=LVCMOS33;
 
-IO_LOC  "anodo_po[0]" 57;
+IO_LOC  "anodo_po[0]" 56;
 IO_PORT "anodo_po[0]" IO_TYPE=LVCMOS33;
 
 IO_LOC  "clk_pi" 52;
