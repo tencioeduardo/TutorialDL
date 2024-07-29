@@ -1,10 +1,5 @@
-// 1.14 inch 240x135 SPI LCD TEST for TANG NANO 9K
-// by fanoble, QQ:87430545
-// 27/6/2022
+module module_spi_lcd (
 
-`timescale 1ps/1ps
-
-module lcd114_test(
 	input clk, // 27M
 	input resetn,
 
@@ -137,18 +132,21 @@ assign lcd_rs     = lcd_rs_r;
 assign lcd_data   = spi_data[7]; // MSB
 
 // gen color bar
-wire [15:0] pixel = (pixel_cnt >= 21600) ? 16'hF800 :
-					(pixel_cnt >= 10800) ? 16'h07E0 : 16'h001F;
 
+wire [15 : 0] pixel;
+reg  [15 : 0] color = 16'h001F; 
+
+assign pixel = (pixel_cnt >= 27000) ? color : (pixel_cnt >= 22000) ? 16'hFFFF :
+               (pixel_cnt >= 11000) ? 16'hF800 : (pixel_cnt >= 5000) ? 16'hFFFF : color;
+ 
 always@(posedge clk or negedge resetn) begin
-	if (~resetn) begin
+	if (!resetn) begin
 		clk_cnt <= 0;
 		cmd_index <= 0;
 		init_state <= INIT_RESET;
-
 		lcd_cs_r <= 1;
 		lcd_rs_r <= 1;
-		lcd_reset_r <= 0;
+		lcd_reset_r <= 1;
 		spi_data <= 8'hFF;
 		bit_loop <= 0;
 
@@ -231,7 +229,7 @@ always@(posedge clk or negedge resetn) begin
 
 			INIT_DONE : begin
 				if (pixel_cnt == 32400) begin
-					; // stop
+			            ; // stop
 				end else begin
 					if (bit_loop == 0) begin
 						// start
