@@ -1,10 +1,13 @@
-module blinky_led
-(
+module blinky_led # (
+
+    parameter WAIT_TIME = 13500000
+    
+)(
     input  logic         clk,
     output logic [5 : 0] led
 );
 
-localparam WAIT_TIME        = 13500000;
+
 logic [5 : 0]  ledCounter   = 0;
 logic [23 : 0] clockCounter = 0;
 

@@ -7,7 +7,7 @@ module blinky_led_tb;
     logic [5:0] led;
 
     // Instantiate the Unit Under Test 
-    blinky_led DUT (
+    blinky_led #(135) DUT (
         .clk(clk),
         .led(led)
     );
@@ -24,7 +24,7 @@ module blinky_led_tb;
         $display("Starting simulation...");
         
         // Wait for some time to observe behavior
-        #500000000;  // Simulate for a sufficient amount of time to see LED changes
+        #175000;  // Simulate for a sufficient amount of time to see LED changes
 
         // End simulation
         $display("Ending simulation...");
