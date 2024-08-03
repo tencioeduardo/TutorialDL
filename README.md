@@ -17,6 +17,7 @@ José Eduardo Tencio Solano 2021079387
 Se descargó el software necesario y las extensiones para Visual Studio Code, a excepción del paso con Zadig, debido a que aún no se cuenta con la FPGA.
 ### 4.2 Parte 2: 2.	Uso del toolchain para diseño en FPGA
 Se clonó el repositorio y se creó uno para almacenar los resultados.
+![image](https://github.com/user-attachments/assets/787c0dac-569d-48e8-a93b-5aa2e47b2839)
 
 Se probó la Suite para síntesis y desarrollo de Yosys
 
