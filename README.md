@@ -19,6 +19,7 @@ Se descargó el software necesario y las extensiones para Visual Studio Code, a 
 Se clonó el repositorio y se creó uno para almacenar los resultados.
 ![image](https://github.com/user-attachments/assets/787c0dac-569d-48e8-a93b-5aa2e47b2839)
 
+
 Se probó la Suite para síntesis y desarrollo de Yosys
 ![image](https://github.com/user-attachments/assets/2e5f0868-d70b-416c-8d2a-1755268138b3)
 
